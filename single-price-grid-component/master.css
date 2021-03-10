@@ -16,7 +16,6 @@
 }
 
 
-}
 h1{
     color: hsl(179, 62%, 43%);
 }
@@ -25,11 +24,18 @@ h2{
     color: hsl(71, 73%, 54%);
 }
 
+ul{
+    list-style: none;
+    color: hsl(204, 43%, 93%);
+    font-size: 11pt;
+    padding-left: 0%;
+}
+
 #gain{
     color: hsl(218, 22%, 67%);
 }
 
-#top{
+.top{
     background-color: white;
     padding: 20px 20px 20px 20px;
     grid-column: 1 / span 2;
@@ -37,19 +43,17 @@ h2{
 }
 
 
-#left{
+.left{
     background-color: hsl(179, 62%, 43%);
     padding: 10%;
     color: white;
     border-bottom-left-radius: 10px;
-   
 }
 
-#right{
+.right{
     background-color: hsl(179, 86%, 44%);
     padding: 10%;
-    color: white;
-    
+    color: white; 
 }
 
 .btn{
@@ -61,8 +65,7 @@ h2{
   border-radius: 5px;
   width: 100%;
   font-weight: bold;
-  font-size: 16px;
-    
+  font-size: 16px;  
 }
 
 body{
@@ -80,12 +83,12 @@ body{
         margin: auto;
     }
 
-    #left{
+    .left{
         grid-row: 3;
         border-bottom-right-radius: 10px;
     }
 
-    #right{
+    .right{
         grid-row: 2;
         border-bottom-right-radius: none;
     }
@@ -98,10 +101,10 @@ body{
  
     }
 
-    #right{
+    .right{
         border-bottom-right-radius: 10px;
     }
-
+}
 
 /* Background Shapes */
 .circle{
@@ -112,8 +115,7 @@ body{
     right: 20%;
     background: none;
     border-radius: 50%;
-    border: 7px solid hsl(210, 12%, 87%);
-    
+    border: 7px solid hsl(210, 12%, 87%);  
 }
 
 .stroke1{
