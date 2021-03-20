@@ -14,7 +14,7 @@
 }
 
 main {
-    margin: 7% 7%;
+    margin: 7% 9%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -24,8 +24,23 @@ main {
     
 }
 
+h1 {
+    color: var(--dark-magenta);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 0%;
+}
+
 .headline {
     grid-area: headline;
+    text-align: left;
+    
+}
+
+.headline p {
+    color: var(--dark-grayish-magenta);
+    font-size: 12px;
+    
 }
 
 .ratings {
