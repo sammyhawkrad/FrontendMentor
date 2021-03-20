@@ -13,6 +13,26 @@
     --light-grayish-magenta: hsl(300, 24%, 96%);
 }
 
+main {
+    margin: 7% 7%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+                        "headline ratings ratings"
+                        "colton irene anne";
+    
+}
+
+.headline {
+    grid-area: headline;
+}
+
+.ratings {
+    grid-area: ratings;
+}
+
+
 .attribution {
 font-size: 11px;
 text-align: center;
