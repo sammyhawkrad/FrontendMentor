@@ -16,11 +16,12 @@
 main {
     margin: 7% 9%;
     display: grid;
+    width: 80%;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
                         "headline ratings ratings"
-                        "colton irene anne";
+                        "reviews reviews reviews";
     
 }
 
@@ -73,7 +74,7 @@ h1 {
     margin-left: 20px;
 }
 
-.reviews {
+.reviews-rating {
     justify-self: start;
 }
 
@@ -83,6 +84,72 @@ h1 {
 
 .besttech {
     justify-self: end;
+}
+
+.reviews {
+    display: grid;
+    grid-area: reviews;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+}
+
+.review {
+  background-color: var(--dark-magenta);
+  border-radius: 10px;
+  padding: 5px;  
+  margin: 10px;
+  color: white;
+  display: grid;
+
+}
+
+.profile {
+    margin: 15px 15px 0 15px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;    
+}
+
+.image {
+    align-self: center;
+}
+
+.details {
+    align-self: center;
+}
+
+.name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.customer-type {
+    font-size: 12px;
+    color: var(--soft-pink);
+}
+.review-text {
+    margin: 0 15px 15px 15px;
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+#colton {
+    margin-left: 0%;
+    align-self: start;
+}
+
+#irene {
+    align-self: center;
+    margin-top: 5%;
+}
+
+#anne {
+    align-self: end;
+    margin-top: 10%;
 }
 
 .attribution {
