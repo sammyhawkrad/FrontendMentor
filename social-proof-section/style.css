@@ -183,7 +183,7 @@ text-align: center;
 color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     main {
     margin: 7% 9%;
     display: flex;
