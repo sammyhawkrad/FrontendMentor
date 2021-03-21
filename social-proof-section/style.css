@@ -57,7 +57,6 @@ h1 {
     background-color: var(--light-grayish-magenta);
     border: solid var(--light-grayish-magenta);
     border-radius: 5px;
-    text-align: center;
     width: 70%;
     display: flex;
     padding-left: 20px;
@@ -182,4 +181,62 @@ text-align: center;
 
 .attribution a {
 color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    main {
+    margin: 7% 9%;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    }
+
+    .ratings {
+        padding-left: 0%;
+        padding-top: 2%;
+        padding-bottom: 8%;
+        grid-area: ratings;
+        display: grid;
+    }
+
+    .rating-area {
+        width: 100%;
+        padding: 5px 0px 5px 0px;
+        flex-direction: column;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .rating-text {
+        margin-top: 5px;
+    }
+
+    .guru {
+        justify-self: start;
+    }
+
+    .besttech {
+        justify-self: start;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .review {
+        margin: 5px 0px 5px 0px;
+    }
+
+    .top-left {
+        background-image: url(./images/bg-pattern-top-mobile.svg);
+        height: 374px;
+        width: 232px;
+    }
+
+    .bottom-right {
+        background-image: url(./images/bg-pattern-bottom-mobile.svg);
+        width: 375px;
+        height: 503px;
+        top: 100%;
+    }
 }
