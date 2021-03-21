@@ -152,6 +152,29 @@ h1 {
     margin-top: 10%;
 }
 
+.top-left {
+    position: absolute;
+    background-image: url(./images/bg-pattern-top-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 362px;
+    width: 584px;
+    top: 0%;
+}
+
+.bottom-right {
+    position: absolute;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 673px;
+    width: 1085px;
+    bottom: 0%;
+    top: 15%;
+    right: 0%;
+
+}
+
 .attribution {
 font-size: 11px;
 text-align: center;
