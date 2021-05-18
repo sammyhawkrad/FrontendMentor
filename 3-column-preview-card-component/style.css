@@ -1,2 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --lexend: 'Lexend Deca', sans-serif;
+    --big-shoulder: 'Big Shoulders Display', cursive;
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraph-colour: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+body{
+    background-color: var(--very-light-gray);
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    margin: 10% auto auto auto;
+    border-radius: 10px;
+}
+
+.carInfo{
+    padding: 50px;
+}
+
+#sedans{
+    background-color: var(--bright-orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#suvs{
+    background-color: var(--dark-cyan);
+}
+
+#luxury{
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.carType{
+    color: var(--very-light-gray);
+    font-family: var(--big-shoulder);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.description{
+    color: var(--paragraph-colour);
+    font-family: var(--lexend);
+    font-size: 9pt;
+    line-height: 1.5rem;
+}
+
+button{
+    background-color: var(--very-light-gray);
+    padding: 10px 30px;
+    font-family: var(--lexend);
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+#sedans button{
+    color: var(--bright-orange);
+}
+
+#suvs button{
+    color: var(--dark-cyan);
+}
+
+#luxury button{
+    color: var(--very-dark-cyan);
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
