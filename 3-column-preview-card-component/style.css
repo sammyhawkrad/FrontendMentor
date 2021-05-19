@@ -10,7 +10,7 @@
     --very-light-gray: hsl(0, 0%, 95%);
 }
 
-body{ background-color: var(--very-light-gray); }
+body{ background: var(--very-light-gray); }
 
 .container{
     width: 60%;
@@ -19,23 +19,14 @@ body{ background-color: var(--very-light-gray); }
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .carInfo{ padding: 50px; }
 
-#sedans{
-    background-color: var(--bright-orange);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-#suvs{ background-color: var(--dark-cyan); }
-
-#luxury{
-    background-color: var(--very-dark-cyan);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
+#sedans{ background: var(--bright-orange); }
+#suvs{ background: var(--dark-cyan); }
+#luxury{ background: var(--very-dark-cyan); }
 
 .carType{
     color: var(--very-light-gray);
@@ -52,7 +43,7 @@ body{ background-color: var(--very-light-gray); }
 }
 
 button{
-    background-color: var(--very-light-gray);
+    background: var(--very-light-gray);
     padding: 10px 30px;
     font-family: var(--lexend);
     border-radius: 20px;
@@ -64,19 +55,7 @@ button{
 #suvs button{ color: var(--dark-cyan); }
 #luxury button{ color: var(--very-dark-cyan); }
 
-@media screen and (max-width: 600px){
-    .container{ flex-direction: column; }
-
-    #sedans{
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 8px;
-    }
-
-    #luxury{
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 8px;
-    }
-}
+@media screen and (max-width: 600px){ .container{ flex-direction: column; }}
 
 @media screen and (max-width: 1000px) {
     .container{ width: 80%;}
