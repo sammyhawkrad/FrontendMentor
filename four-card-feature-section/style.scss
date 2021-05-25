@@ -65,17 +65,11 @@ body{
     padding: 20px;
     border-top: 5px solid;
 
-    h2{
-        font-size: 1.2rem;
-    }
+    h2{ font-size: 1.2rem; }
 
-    p{
-        color: $grayish-blue;
-    }
+    p{ color: $grayish-blue; }
 
-    img{
-        float: right;
-    }
+    img{ float: right; }
 }
 
 #supervisor{
@@ -98,6 +92,24 @@ body{
     border-color: $blue;
     grid-area: calculator;
     align-self: center;
+}
+
+// Responsiveness
+@media screen and (max-width:420px) {
+    #heading, #subheading{
+        font-size: 1.5rem;
+    }
+    
+    #description{
+        width: 80%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
 }
 
 .attribution { font-size: 11px; text-align: center; }
