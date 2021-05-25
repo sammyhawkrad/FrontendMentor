@@ -1,0 +1,104 @@
+// Colours
+// Primary
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Neutral
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+$poppins-font: 'Poppins', sans-serif;
+
+body{
+    font-family: $poppins-font;
+    background: $very-light-gray;
+}
+
+// Header
+.header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#heading{
+    font-size: 2rem;
+    color: $grayish-blue;
+}
+
+#subheading{
+    font-size: 2rem;
+    color: $very-dark-blue;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#description{
+    color: $grayish-blue;
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+// Four card feature
+.container{
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "supervisor teamBuilder calculator"
+        "supervisor karma calculator";
+}
+
+.feature{
+    box-shadow: 0px 10px 20px 0px lightgray;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 20px;
+    border-top: 5px solid;
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    p{
+        color: $grayish-blue;
+    }
+
+    img{
+        float: right;
+    }
+}
+
+#supervisor{
+    border-color: $cyan;
+    grid-area: supervisor;
+    align-self: center;
+}
+
+#team-builder{
+    border-color: $red;
+    grid-area: teamBuilder;
+}
+
+#karma{
+    border-color: $orange;
+    grid-area: karma;
+}
+
+#calculator{
+    border-color: $blue;
+    grid-area: calculator;
+    align-self: center;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

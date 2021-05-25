@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#heading {
+  font-size: 2rem;
+  color: #a3a5ae;
+}
+
+#subheading {
+  font-size: 2rem;
+  color: #4c4e61;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#description {
+  color: #a3a5ae;
+  text-align: center;
+  width: 45%;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "supervisor teamBuilder calculator" "supervisor karma calculator";
+}
+
+.feature {
+  box-shadow: 0px 10px 20px 0px lightgray;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 20px;
+  border-top: 5px solid;
+}
+.feature h2 {
+  font-size: 1.2rem;
+}
+.feature p {
+  color: #a3a5ae;
+}
+.feature img {
+  float: right;
+}
+
+#supervisor {
+  border-color: #45d3d3;
+  grid-area: supervisor;
+  align-self: center;
+}
+
+#team-builder {
+  border-color: #ea5353;
+  grid-area: teamBuilder;
+}
+
+#karma {
+  border-color: #fcaf4a;
+  grid-area: karma;
+}
+
+#calculator {
+  border-color: #549ef2;
+  grid-area: calculator;
+  align-self: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
