@@ -1,2 +1,49 @@
+// primary colours
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+$header-font: 'Poppins', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+body{
+    background-color: $violet;
+    background-image: url(./images/bg-desktop.svg);
+}
+
+#logo{ 
+    margin: 30px 50px 50px 55px;
+
+    img{ height: 40px; }
+ }
+
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.message{
+    color: white;
+    padding: 30px 0px 30px 50px;
+
+    h1{ font-family: $header-font; }
+    p{ font-family: $body-font; }
+    button{
+        border: none;
+        color: $violet;
+        padding: 10px 50px;
+        font-family: $body-font;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    button:active{
+        background: $soft-magenta;
+        color: white;
+    }
+
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
