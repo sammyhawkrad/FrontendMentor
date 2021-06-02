@@ -26,6 +26,8 @@ body {
 }
 .message p {
   font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
 }
 .message button {
   border: none;
@@ -38,6 +40,29 @@ body {
 .message button:active {
   background: #e882e8;
   color: white;
+}
+
+.social-buttons {
+  text-align: right;
+  margin-right: 70px;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 5px;
+  text-align: center;
+  color: white;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.fab:active {
+  border-color: #e882e8;
+  color: #e882e8;
 }
 
 .attribution {
