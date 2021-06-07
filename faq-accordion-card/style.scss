@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+//colours
+//primary text
+$very-dark-desat-blue: hsl(238, 29%, 16%);
+$soft-red:  hsl(14, 88%, 65%);
+
+//neutral text
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+
+//dividers
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+//background gradient
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+
+body {
+    background: linear-gradient(to bottom, $soft-violet, $soft-blue);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    background: white;
+    border-radius: 15px;
+    width: 80%;
+    margin: 100px auto;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.image {
+    background-image: url(./images/illustration-woman-online-desktop.svg), 
+                      url(./images/bg-pattern-desktop.svg),
+                      url(./images/illustration-box-desktop.svg);
+    background-repeat: no-repeat;
+    margin-left: -60px;
+}
+
+.faqs{
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+
+    h1 {
+        color: $very-dark-desat-blue;
+        font-size: 2.5rem;
+    }
+}
+.faq {
+    .question {
+        color: $dark-grayish-blue;
+        width: 100%;
+        outline: none;
+        padding: 10px;
+        text-align: left;
+        border: none;
+        border-bottom: 2px solid $light-grayish-blue;
+        background-color: transparent;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 20px 0;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .active, .question:hover {
+        color: $very-dark-desat-blue;
+    }
+
+    .answer{
+        color: $dark-grayish-blue;
+        overflow: hidden;
+        display: none;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);}
