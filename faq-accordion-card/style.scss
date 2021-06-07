@@ -31,10 +31,11 @@ body {
     display: grid;
     background: white;
     border-radius: 15px;
-    width: 80%;
+    width: 70%;
     margin: 100px auto;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    height: 75vh;
 }
 
 .image {
@@ -56,14 +57,14 @@ body {
     }
 }
 .faq {
+    border-bottom: 1.5px solid $light-grayish-blue;
+
     .question {
         color: $dark-grayish-blue;
         width: 100%;
         outline: none;
-        padding: 10px;
         text-align: left;
         border: none;
-        border-bottom: 2px solid $light-grayish-blue;
         background-color: transparent;
         font-size: 1.2rem;
         font-weight: 700;
@@ -72,14 +73,32 @@ body {
         transition: 0.4s;
     }
 
-    .active, .question:hover {
+    .active {
         color: $very-dark-desat-blue;
+    }
+
+    .active::after {
+        content: url(./images/icon-arrow-down.svg);
+        float: right;
+        rotate: 180deg;
+    }
+
+    .question:hover {
+        color: $soft-red;
+    } 
+    
+    .question::after {
+        content: url(./images/icon-arrow-down.svg);
+        float: right;
+        rotate: none;
     }
 
     .answer{
         color: $dark-grayish-blue;
         overflow: hidden;
         display: none;
+        padding-bottom: 5px;
+        transition: max-height 0.2s ease-out;
     }
 }
 
