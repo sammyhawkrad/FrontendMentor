@@ -3,6 +3,7 @@
 :root{
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
+    --rotate: none;
 
 }
 //colours
@@ -35,7 +36,6 @@ body {
     margin: 100px auto;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
-    height: 75vh;
 }
 
 .image {
@@ -67,27 +67,21 @@ body {
         border: none;
         background-color: transparent;
         font-size: 1.2rem;
-        font-weight: 700;
-        padding: 20px 0;
+        padding: 15px 0;
         cursor: pointer;
         transition: 0.4s;
+
     }
 
     .active {
         color: $very-dark-desat-blue;
     }
 
-    .active::after {
-        content: url(./images/icon-arrow-down.svg);
-        float: right;
-        rotate: 180deg;
-    }
-
     .question:hover {
         color: $soft-red;
     } 
     
-    .question::after {
+    .arrow {
         content: url(./images/icon-arrow-down.svg);
         float: right;
         rotate: none;

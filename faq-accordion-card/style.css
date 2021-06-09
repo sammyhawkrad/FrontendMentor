@@ -2,6 +2,7 @@
 :root {
   font-size: 12px;
   font-family: "Kumbh Sans", sans-serif;
+  --rotate: none;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
   margin: 100px auto;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  height: 75vh;
 }
 
 .image {
@@ -48,23 +48,17 @@ body {
   border: none;
   background-color: transparent;
   font-size: 1.2rem;
-  font-weight: 700;
-  padding: 20px 0;
+  padding: 15px 0;
   cursor: pointer;
   transition: 0.4s;
 }
 .faq .active {
   color: #1d1e35;
 }
-.faq .active::after {
-  content: url(./images/icon-arrow-down.svg);
-  float: right;
-  rotate: 180deg;
-}
 .faq .question:hover {
   color: #f47c57;
 }
-.faq .question::after {
+.faq .arrow {
   content: url(./images/icon-arrow-down.svg);
   float: right;
   rotate: none;
