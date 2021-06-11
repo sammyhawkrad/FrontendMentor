@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-:root{
-    font-size: 12px;
-    font-family: 'Kumbh Sans', sans-serif;
-    --rotate: none;
-
+* {
+  margin: 0;
+  padding: 0;
 }
+
+:root{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
 //colours
 //primary text
 $very-dark-desat-blue: hsl(238, 29%, 16%);
@@ -25,35 +28,52 @@ $soft-blue: hsl(240, 73%, 65%);
 body {
     background: linear-gradient(to bottom, $soft-violet, $soft-blue);
     background-repeat: no-repeat;
-    height: 100vh;
+    font-size: 12px;
+
 }
 
 .container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background: white;
     border-radius: 15px;
-    width: 70%;
-    margin: 100px auto;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
+    width: 90%;
+    margin: 150px auto 50px;
 }
 
 .image {
-    background-image: url(./images/illustration-woman-online-desktop.svg), 
-                      url(./images/bg-pattern-desktop.svg),
-                      url(./images/illustration-box-desktop.svg);
+    display: flex;
+    flex: 1 1 100%;
+    background: url(./images/bg-pattern-mobile.svg) top center;
     background-repeat: no-repeat;
-    margin-left: -60px;
+    justify-content: center;
+    overflow: visible;
+    position: relative;
+    padding-bottom: 8rem;
+    align-items: center;
+
+    #box{
+        display: none;
+    }
+
+    picture {
+        position: absolute;
+        top: -85%;
+        left: 50%;
+        transform: translateX(-55%);
+        
+    }
 }
 
 .faqs{
-    width: 70%;
+    width: 80%;
     margin: auto;
-    padding: 50px;
+    padding: 10px 10px 50px 10px;
 
     h1 {
         color: $very-dark-desat-blue;
-        font-size: 2.5rem;
+        font-size: 2.5em;
+        text-align: center;
     }
 }
 .faq {
@@ -66,7 +86,7 @@ body {
         text-align: left;
         border: none;
         background-color: transparent;
-        font-size: 1.2rem;
+        font-size: 1.1em;
         padding: 15px 0;
         cursor: pointer;
         transition: 0.4s;
