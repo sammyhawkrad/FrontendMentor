@@ -89,6 +89,50 @@ body {
   transition: max-height 0.2s ease-out;
 }
 
+@media screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    width: 65%;
+    margin-top: 113px;
+  }
+
+  .image {
+    background: url(./images/bg-pattern-desktop.svg) bottom 30% left 120%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .image .image-wrap {
+    overflow: hidden;
+    width: 100%;
+    height: 130%;
+  }
+  .image #box {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    left: -21%;
+    top: 36%;
+  }
+  .image picture {
+    transform: translateX(-14rem);
+    position: relative;
+    top: 21%;
+    left: -18%;
+  }
+
+  .faqs {
+    padding-right: 50px;
+    padding-bottom: 10px;
+  }
+  .faqs h1 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .faq .question {
+    padding: 20px 0;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
