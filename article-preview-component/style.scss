@@ -1,0 +1,133 @@
+//colours
+$vdark-grayish-blue: hsl(217, 19%, 35%);
+$desat-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+$heading-font: 'Manrope', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: $heading-font;
+    font-size: 13px;
+}
+
+body {
+    background-color: $light-grayish-blue;
+}
+.container {
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.image {
+    width: 100%;
+}
+
+article {
+    padding: 2rem;
+
+    header {
+        font-size: 0.9rem;
+        color: $vdark-grayish-blue;
+        margin-bottom: 1rem;
+    }
+
+    .message {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        color: $desat-dark-blue;
+    }
+
+    .profile {
+        display: flex;
+        justify-content: flex-start;
+
+        #dp {
+            flex: 1 0 auto;
+
+            #avatar {
+            height: 3.5rem;
+            border-radius: 50%;
+            }
+        }
+
+        #info {
+            padding-left: 15px;
+            flex: 2 0 auto;
+           
+            #name{
+            color: $vdark-grayish-blue;
+            font-weight: bold;
+            margin-bottom: 7px;
+            }
+        }
+    
+
+        #share-button {
+            flex: 1 0 auto;
+            height: 2rem;
+            width: 2rem;
+
+            img{
+            background-color: $light-grayish-blue;
+            border-radius: 50%;
+            padding: 0.7rem;
+            margin: auto;
+            }
+        }
+    }
+}
+
+.share {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    background: $vdark-grayish-blue;
+    padding: 1.5rem 2rem;
+    color: $desat-dark-blue;
+
+    p {
+        flex: 1 0 auto;
+    }
+
+    .social-icons {
+        flex: 3 0 auto;
+        display: flex;
+        justify-content: flex-start;
+
+        img{
+            margin-right: 20px;
+            max-height: 20px;
+        }
+    }
+
+    #hidden-share-button {
+        flex: 1 0 auto;
+
+        #hs-icon {
+            padding: 5px;
+            background: $desat-dark-blue;
+            border-radius: 50%;
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            margin: auto;
+            
+        }
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
