@@ -44,9 +44,6 @@ article .profile {
   display: flex;
   justify-content: flex-start;
 }
-article .profile #dp {
-  flex: 1 0 auto;
-}
 article .profile #dp #avatar {
   height: 3.5rem;
   border-radius: 50%;
@@ -106,7 +103,7 @@ article .profile #share-button img {
   margin: auto;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .container {
     width: 50%;
     display: flex;

@@ -56,7 +56,6 @@ article {
         justify-content: flex-start;
 
         #dp {
-            flex: 1 0 auto;
 
             #avatar {
             height: 3.5rem;
@@ -131,7 +130,7 @@ article {
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
 
     .container {
         width: 50%;
