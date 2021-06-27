@@ -80,7 +80,8 @@ article {
             flex: 1 0 auto;
             height: 2rem;
             width: 2rem;
-
+            cursor: pointer;
+            
             img{
             background-color: $light-grayish-blue;
             border-radius: 50%;
@@ -127,6 +128,19 @@ article {
             margin: auto;
             
         }
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .container {
+        width: 50%;
+        display: flex;
+        margin-top: 200px;
+    }
+
+    .image {
+        height: 100%;
     }
 }
 .attribution { font-size: 11px; text-align: center; }

@@ -64,6 +64,7 @@ article .profile #share-button {
   flex: 1 0 auto;
   height: 2rem;
   width: 2rem;
+  cursor: pointer;
 }
 article .profile #share-button img {
   background-color: #ecf2f8;
@@ -105,6 +106,17 @@ article .profile #share-button img {
   margin: auto;
 }
 
+@media screen and (min-width: 700px) {
+  .container {
+    width: 50%;
+    display: flex;
+    margin-top: 200px;
+  }
+
+  .image {
+    height: 100%;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
