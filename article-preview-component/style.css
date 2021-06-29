@@ -113,6 +113,33 @@ article .profile #share-button img {
   .image {
     height: 100%;
   }
+
+  .share {
+    position: absolute;
+    top: 24.5rem;
+    left: 62rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 5px 10px #9eafc2;
+  }
+  .share .social-icons {
+    padding-left: 15px;
+  }
+
+  .share::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #48556a transparent transparent transparent;
+  }
+
+  #hidden-share-button {
+    display: none;
+  }
 }
 .attribution {
   font-size: 11px;
