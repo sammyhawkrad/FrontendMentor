@@ -14,9 +14,9 @@ I use this mono-repo to organise and host all my solutions. The table below show
 | 3 | [Social Proof Section](https://social-proof-section-gold-alpha.vercel.app/)                     	| [social-proof-section](social-proof-section)                    | HTML, CSS |
 | 4 | [Stats Preview Card Component](https://angry-hugle-32f5b0.netlify.app/)                           | [stats-preview-card-component](stats-preview-card-component)    | HTML, CSS |
 | 5 | [3 Column Preview Card Component](https://sm-3-column-preview-card-component.netlify.app/)     | [3-column-preview-card-component](3-column-preview-card-component) | HTML, CSS  |
-| 6 | [Four Card Feature Section](https://sm-four-card-feature-section.netlify.app/)                   	| [four-card-feature-section](four-card-feature-section)          | HTML, SASS |
-| 7 | [Huddle Landing Page](https://sm-huddle-landing-page.netlify.app/)                                | [huddle-landing-page](huddle-landing-page)                      | HTML, SASS |
-| 8 | [FAQ Accordion Card](https://sm-faq-accordion-card.netlify.app/)                              	| [faq-accordion-card](faq-accordion-card)                        | HTML, SASS, JavaScript         |
-|   |   |   |   |
+| 6 | [Four Card Feature Section](https://sm-four-card-feature-section.netlify.app/)                   	| [four-card-feature-section](four-card-feature-section)          | HTML, SCSS |
+| 7 | [Huddle Landing Page](https://sm-huddle-landing-page.netlify.app/)                                | [huddle-landing-page](huddle-landing-page)                      | HTML, SCSS |
+| 8 | [FAQ Accordion Card](https://sm-faq-accordion-card.netlify.app/)                              	| [faq-accordion-card](faq-accordion-card)                        | HTML, SCSS, JavaScript         |
+| 9  | [Article Preview Component](https://sm-article-preview-component.netlify.app/)  | [article-preview-component](article-preview-component)  | HTML, SCSS, jQuery  |
 |   |   |   |   |
 |   |   |   |   |
