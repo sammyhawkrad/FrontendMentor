@@ -12,7 +12,7 @@ $linear-gradient2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 
 //font
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
-$body-font: 'Josefin Sans', sans-serif;
+$body-font: 16px 'Josefin Sans', sans-serif;
 
 * {
     margin: 0;
@@ -21,7 +21,67 @@ $body-font: 'Josefin Sans', sans-serif;
 }
 
 :root {
-    font-family: $body-font;
+    font: $body-font;
+}
+
+#logo img {
+    margin: 1.5rem;
+    height: 1.3rem;
+}
+
+main {
+    text-align: center;
+
+    picture img {
+        width: 100%;
+    }
+
+    article {
+        padding: 3rem 2rem;
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $dark-grayish-red;    
+            
+            span{ 
+                color: $desat-red;
+                font-weight: 300;
+            }
+        }
+
+        p {
+            color: $desat-red;
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        form {
+            
+            input {
+                padding: 0.7rem 1rem;
+                border-radius: 30px;
+                border: 1px solid $desat-red;
+                height: 2.5rem;
+            }
+
+            button {
+                padding: 8px 20px;
+                background: #f78484;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 2px 5px 8px $desat-red;
+    
+                
+            }
+
+            ::placeholder, ::-moz-placeholder {
+                color: $desat-red;
+            }
+        }
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }

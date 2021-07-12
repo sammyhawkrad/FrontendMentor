@@ -6,7 +6,54 @@
 }
 
 :root {
-  font-family: "Josefin Sans", sans-serif;
+  font: 16px "Josefin Sans", sans-serif;
+}
+
+#logo img {
+  margin: 1.5rem;
+  height: 1.3rem;
+}
+
+main {
+  text-align: center;
+}
+main picture img {
+  width: 100%;
+}
+main article {
+  padding: 3rem 2rem;
+}
+main article h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #413a3a;
+}
+main article h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+main article p {
+  color: #ce9797;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  margin: 1rem 0;
+}
+main article form input {
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  border: 1px solid #ce9797;
+  height: 2.5rem;
+}
+main article form button {
+  padding: 8px 20px;
+  background: #f78484;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 5px 8px #ce9797;
+}
+main article form ::placeholder, main article form ::-moz-placeholder {
+  color: #ce9797;
 }
 
 .attribution {
