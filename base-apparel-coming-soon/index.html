@@ -8,20 +8,33 @@
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+  <main>
+    <div id="logo">
+      <img src="./images/logo.svg" alt="Site Logo">
+    </div>
+    <picture class="hero-img">
+      <source media="(min-width:1000px)" srcset="./images/hero-desktop.jpg">
+      <img src="./images/hero-mobile.jpg" alt="">
+    </picture>
+    <header>
+      <h1>We're<br>coming<br>soon</h1>
+    </header>
+    <article>
+      <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+    </article>
+    <form action="">
+      <input type="email" name="email" id="email" placeholder="Email Address" aria-placeholder="Email Address">
+      <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+    </form>
+  </main>
   
   <footer>
     <p class="attribution">
