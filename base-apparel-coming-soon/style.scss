@@ -41,7 +41,7 @@ main {
 
         h1 {
             text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: 600;
             color: $dark-grayish-red;    
             
@@ -53,8 +53,8 @@ main {
 
         p {
             color: $desat-red;
-            font-size: 0.9rem;
-            line-height: 1.2rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
             margin: 1rem 0;
         }
 
@@ -64,7 +64,9 @@ main {
                 padding: 0.7rem 1rem;
                 border-radius: 30px;
                 border: 1px solid $desat-red;
-                height: 2.5rem;
+                height: 2.8rem;
+                width: 80%;
+                margin-top: 1rem;
             }
 
             button {
@@ -73,8 +75,8 @@ main {
                 border: none;
                 border-radius: 20px;
                 box-shadow: 2px 5px 8px $desat-red;
-    
-                
+                position: relative;
+                transform: translateX(-75%);              
             }
 
             ::placeholder, ::-moz-placeholder {
@@ -86,3 +88,34 @@ main {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1000px) {
+    #logo {
+        position: absolute;
+        top: 2rem;
+        left: 7rem;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+
+        article {
+            padding: 8rem;
+            max-width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+    }
+
+    body {
+        height: 100vh;
+        max-width: 1400px;
+    }
+
+
+
+}
