@@ -31,7 +31,7 @@ $body-font: 16px 'Josefin Sans', sans-serif;
 
 main {
     text-align: center;
-
+    
     picture img {
         width: 100%;
     }
@@ -41,7 +41,7 @@ main {
 
         h1 {
             text-transform: uppercase;
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 600;
             color: $dark-grayish-red;    
             
@@ -94,19 +94,27 @@ main {
         position: absolute;
         top: 2rem;
         left: 7rem;
+
+        img { height: 2rem;}
     }
     
     main {
         display: flex;
         flex-direction: row-reverse;
         text-align: left;
+        background: url(images/bg-pattern-desktop.svg);
 
         article {
             padding: 8rem;
-            max-width: 60%;
+            max-width: 55%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            p {
+                padding-right: 3.5rem;
+                line-height: 1.7rem;
+            }
 
         }
     }
